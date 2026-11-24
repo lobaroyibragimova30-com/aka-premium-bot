@@ -1,7 +1,7 @@
 
 import telebot
 
-bot = telebot.TeleBot("TOKEN_BU_YERGA")
+bot = telebot.TeleBot 9234105884:AAFo8i4UKQkjoZb-kCppZuQLhyqVWD1hHPU
 
 @bot.message_handler(commands=['start'])
 def start(message):
