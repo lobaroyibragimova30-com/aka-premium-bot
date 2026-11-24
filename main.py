@@ -1,10 +1,10 @@
 
-# AKA PREMIUM
-# Telegram Premium shop bot
+import telebot
 
-def main():
-    print("AKA PREMIUM bot loyihasi boshlandi!")
+bot = telebot.TeleBot("TOKEN_BU_YERGA")
 
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.reply_to(message, "Assalomu alaykum! AKA PREMIUM ga xush kelibsiz! ⭐")
 
-if __name__ == "__main__":
-    main()
+bot.infinity_polling()
